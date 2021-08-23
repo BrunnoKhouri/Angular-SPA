@@ -1,0 +1,12 @@
+<section fxLayout="column" fxLayoutAlign="center start" [ngClass]="{'is-expanded__section': MenuOpened }">
+  <div *ngIf="MenuOpened" (click)="onSideNavClick()">
+    <a class="options__menu" >
+      <mat-icon class="icon_size">home</mat-icon>
+      <p>Home</p>
+    </a>
+    <a class="options__menu" >
+      <mat-icon class="icon_size">person</mat-icon>
+      <p>About</p>
+    </a>   
+  </div>
+</section>

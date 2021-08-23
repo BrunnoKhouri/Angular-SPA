@@ -1,0 +1,19 @@
+<section fxLayout="row">
+  <div fxFlex="100">
+    <app-header></app-header>
+    <mat-sidenav-container class="sidenav__container" (backdropClick)="onBackdropClick()">
+      <mat-sidenav fxFlexOrder="1" *ngIf="showSideNav" class="sidenav__component right"
+        [ngClass]="{'is-expanded__right': sidenavService.isMenuOpenedRight == true}">
+        <app-nav></app-nav>        
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexOrder="2">
+        <div class="content__router">
+        <router-outlet></router-outlet>
+       </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  <mat-sidenav  fxFlexOrder="3"  class="sidenav__component left"
+    [ngClass]="{'is-expanded__left': sidenavService.isMenuOpenedLeft == true}">
+  </mat-sidenav>  
+</section>

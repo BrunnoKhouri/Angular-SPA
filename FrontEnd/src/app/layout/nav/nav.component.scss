@@ -1,0 +1,36 @@
+.is-expanded__section {
+    padding: 0px !important;
+    align-items: inherit !important;
+    justify-content: inherit !important;
+  }
+  
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #0b0c2a;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  
+  .options__menu {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  
+  .icon_size{
+    margin-bottom: 3px;
+    padding: 2px;    
+    margin: 3px;
+  }
+  

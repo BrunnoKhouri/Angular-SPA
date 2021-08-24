@@ -1,3 +1,10 @@
+@import "../../../_theme";
+
+
+p{
+ color: $white;
+}
+
 .is-expanded__section {
     padding: 0px !important;
     align-items: inherit !important;
@@ -29,8 +36,10 @@
   }
   
   .icon_size{
-    margin-bottom: 3px;
-    padding: 2px;    
-    margin: 3px;
+    margin-bottom: 3px;       
+    margin: 5px;
   }
   
+  .mat-icon{
+    color: $white;
+  }

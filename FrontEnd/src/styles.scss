@@ -1,4 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./_theme";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-default !important;
+    color: $ultradark-grey-color;
+    background: #f5f5f5;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .strong {
+    font-weight: 700;
+  }
+  .container {
+    width: 90%;
+    max-width: 1279px;
+    margin: 0 auto;
+  }
+  
+  // --------------------------------------------- Buttons
+  button,
+  .button {
+    font-family: $font-title !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-radius: 4px;
+    max-width: max-content;
+    min-width: min-content;
+    padding: 4px 24px;
+    letter-spacing: 0;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+    border: none;
+    &__primary {
+      background-color: $primary-light-color;
+      color: $ultradark-grey-color;
+    }
+    &__secondary {
+      background-color: rgba($blue, 0.12);
+      color: $blue;
+    }
+    &__link {
+      background-color: $transp;
+      color: $blue;
+      padding-left: 0;
+    }
+    &__outline {
+      border: 1px solid $blue;
+      color: $blue;
+    }
+  }
+  
+  
+  // --------------------------------------------- Section
+  .section {
+    &__title {
+      font-family: $font-title;
+      color: $ultradark-grey-color;
+    }
+  }
+  
+  
+  
+  

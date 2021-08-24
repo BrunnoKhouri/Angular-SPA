@@ -15,6 +15,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { HomeComponent } from './content/home/home.component';
 
 
 
@@ -25,7 +26,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent
+    NavComponent, HomeComponent
     
   ],
   imports: [

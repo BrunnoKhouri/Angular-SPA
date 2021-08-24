@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   showSubmenu: boolean = false;
   isShowing = false;
   showSubSubMenu: boolean = false;
+  isActive = true;
 
   constructor(
     public sidenavService: SidenavService

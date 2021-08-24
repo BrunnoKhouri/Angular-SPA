@@ -1,4 +1,4 @@
-<mat-toolbar  class="header mat-elevation-z8 background_header">
+<mat-toolbar  class="header background_header" [ngClass]="{'mat-elevation-z8': isActive == true}">
   <button mat-icon-button aria-label="Example icon-button with menu icon">
     <mat-icon (click)="onSideNavClick()">menu</mat-icon>
   </button>   

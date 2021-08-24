@@ -1,55 +1,26 @@
-<div
-  fxLayout="row wrap"
-  fxLayoutAlign="space-between center"
-  class="container banner"
->
-  <div
-    fxFlex.xs="100"
-    fxFlex.sm="100"
-    fxFlex.md="50"
-    fxFlex.lg="50"
-    fxFlex.xl="50"
-    fxLayout="column"
-    fxLayoutAlign="center center"
-    class="banner__content"
-  >
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" class="container banner">
+  <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" fxLayout="column"
+    fxLayoutAlign="center center" class="banner__content">
     <h1 class="banner__title">
       Muito mais que uma framework.
     </h1>
     <h2 class="banner__subtitle">
-      O Angular é um framework Javascript, isso quer dizer que com ele é permitido desenvolver aplicações web dinâmicas (“webapps”), não sendo preciso fazer o reload e que haja efetivamente como uma aplicação. Porém, antes de nos aprofundarmos no Angular em si, vamos abordar, a seguir, os conceitos de um framework...  
+      O Angular é um framework Javascript, isso quer dizer que com ele é permitido desenvolver aplicações web dinâmicas
+      (“webapps”), não sendo preciso fazer o reload e que haja efetivamente como uma aplicação. Porém, antes de nos
+      aprofundarmos no Angular em si, vamos abordar, a seguir, os conceitos de um framework...
     </h2>
 
     <div class="banner__button-group">
-      <button
-        mat-flat-button
-        id="btn-banner-free-test"
-        class="button__primary">
-        COMECE AGORA
-      </button>     
+      <button (click)="actualUrl()" mat-flat-button id="btn-banner-free-test" class="button__primary">
+        <p> SAIBA MAIS... </p>
+      </button>
     </div>
   </div>
-  <div
-    fxFlex.xs="100"
-    fxFlex.sm="100"
-    fxFlex.md="50"
-    fxFlex.lg="50"
-    fxFlex.xl="50"
-    fxLayoutAlign="center center"
-    class="banner__media"
-  >
+  <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" fxLayoutAlign="center center"
+    class="banner__media">
     <picture>
-      <source
-        type="image/png"
-        srcset="../../assets/hero3.png"
-        alt="Pessoa Sorrindo"
-        class="banner__image"
-      />
-      <img
-        src="../../assets/hero3.png"
-        alt="Pessoa Sorrindo"
-        class="banner__image"
-      />
+      <source type="image/png" srcset="../../assets/hero3.png" alt="Pessoa Sorrindo" class="banner__image" />
+      <img src="../../assets/hero3.png" alt="Pessoa Sorrindo" class="banner__image" />
     </picture>
   </div>
 </div>

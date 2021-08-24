@@ -17,7 +17,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './content/home/home.component';
 import { AboutAngularComponent } from './content/home/about-angular/about-angular.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { VideoDialogComponent } from './content/home/about-angular/video-dialog/video-dialog.component'
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -28,7 +30,7 @@ import { AppRoutingModule } from './app-routing.module'
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent, HomeComponent, AboutAngularComponent
+    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent
     
   ],
   imports: [
@@ -44,8 +46,12 @@ import { AppRoutingModule } from './app-routing.module'
     MatButtonModule,
     MatRadioModule,
     MatCardModule,
-    MatGridListModule 
+    MatGridListModule,
+    MatDialogModule
     
+  ],
+  entryComponents: [
+    VideoDialogComponent    
   ],
   providers: [],
   bootstrap: [AppComponent]

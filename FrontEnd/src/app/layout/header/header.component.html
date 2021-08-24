@@ -1,7 +1,12 @@
 <mat-toolbar  class="header background_header" [ngClass]="{'mat-elevation-z8': isActive == true}">
-  <button mat-icon-button aria-label="Example icon-button with menu icon">
+  <button class="button-size" mat-icon-button aria-label="Example icon-button with menu icon">
     <mat-icon (click)="onSideNavClick()">menu</mat-icon>
   </button>   
   <div class="logo-img">    
+  </div>
+  <div class="icons-link">
+    <a (click)="toggleModal()">                    
+      <img class="_icon"  width="100%" src="../../../assets/linkedin.png" alt="iconlikedin">           
+   </a>
   </div>
 </mat-toolbar>

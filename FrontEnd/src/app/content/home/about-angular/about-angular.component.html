@@ -14,13 +14,29 @@
       Angular que tanto na versão anterior quanto na atual requerem um esforço do programador que o aplica.
     </h2>
     <h1 class="banner__title">Sobre Angular</h1>
-    <h2 class="banner__subtitle">      
+    <h2 class="banner__subtitle">
       O projeto foi originalmente desenvolvido por Miško Hevery, em 2009, através da empresa Brat Tech LLC que, após um
-      breve lançamento, optou por difundi-lo enquanto software livre (2010). <br> 
+      breve lançamento, optou por difundi-lo enquanto software livre (2010). <br>
       Sua principal característica que o diferencia dos outros frameworks é que ele pode funcionar como uma extensão do
       HTML e não é necessário manipular o DOM, ainda que o Angular possibilite isso. O que permite a criação de um
       front-end mais elaborado, sem precisar manusear diretamente o html e os dados.
     </h2>
-
+    <button mat-flat-button class="button__secondary" (click)="openVideoDialog()">
+      <span class="material-icons"> play_circle_outline </span>
+      COMO FUNCIONA
+    </button>
+    <picture>
+      <source
+        type="image/png"
+        srcset="../../../../assets/feature-search.png"
+        alt="Pessoa Sorrindo"
+        class="banner__image"
+      />
+      <img
+        src="../../../../assets/feature-search.png"
+        alt="Pessoa Sorrindo"
+        class="banner__image"
+      />
+    </picture>
   </div>
 </div>

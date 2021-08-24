@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { VideoDialogComponent } from './video-dialog/video-dialog.component';
 
 @Component({
   selector: 'app-about-angular',
@@ -8,9 +10,14 @@ import { Router } from '@angular/router';
 })
 export class AboutAngularComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
   
+  public openVideoDialog(): void {
+    const dialogRef = this.dialog.open(VideoDialogComponent, {
+    });   
+
+  }
 }

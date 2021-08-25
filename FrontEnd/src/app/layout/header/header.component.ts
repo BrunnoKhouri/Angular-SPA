@@ -30,8 +30,7 @@ export class HeaderComponent implements OnInit {
     this.sidenavService.changeIsMenuOpened('left');
   }
 
-  toggleModal() {
-    //this.eventClickModal.emit();
+  toggleModal() {    
     var win = window.open("https://www.linkedin.com/in/brunno-khouri-delpin-borges-a808621b9/", '_blank');
     win.focus();
   }

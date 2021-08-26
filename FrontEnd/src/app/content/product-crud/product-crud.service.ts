@@ -25,4 +25,8 @@ export class ProductCrudService {
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product)
   }
+
+  read(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.baseUrl);
+  }
 }

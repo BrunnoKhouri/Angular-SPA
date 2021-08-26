@@ -10,6 +10,7 @@ import { ProductCreateComponent } from './content/product-crud/product-create/pr
 import { VideoDialogComponent } from './content/home/about-angular/video-dialog/video-dialog.component';
 import { HomeComponent } from './content/home/home.component';
 import { AboutAngularComponent } from './content/home/about-angular/about-angular.component';
+import { FormsModule } from '@angular/forms';
 
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -23,6 +24,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AppRoutingModule } from './app-routing.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ProductReadComponent } from './content/product-crud/product-read/product-read.component';
 
 
 
@@ -35,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent
+    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent
     
   ],
   imports: [
@@ -43,6 +47,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule, 
 
     //Angular Material
     MatSnackBarModule,   
@@ -55,12 +60,14 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatGridListModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule 
     
      
   ],  
   providers: [],
   entryComponents: [
-    VideoDialogComponent    
+    VideoDialogComponent, ProductCreateComponent    
   ],
   bootstrap: [AppComponent]
 })

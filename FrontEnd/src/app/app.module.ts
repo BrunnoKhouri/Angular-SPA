@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -11,12 +11,14 @@ import { VideoDialogComponent } from './content/home/about-angular/video-dialog/
 import { HomeComponent } from './content/home/home.component';
 import { AboutAngularComponent } from './content/home/about-angular/about-angular.component';
 import { FormsModule } from '@angular/forms';
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common';
 
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { NavComponent } from './layout/nav/nav.component'
-import { MatListModule, MatSidenavModule, MatSnackBarModule } from '@angular/material';
+import { MatListModule, MatSidenavModule, MatSnackBarModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { MatButtonModule} from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
@@ -32,7 +34,7 @@ import { ProductReadComponent } from './content/product-crud/product-read/produc
 
 
 
-
+registerLocaleData(localePt);
 
 
 @NgModule({
@@ -61,11 +63,17 @@ import { ProductReadComponent } from './content/product-crud/product-read/produc
     MatGridListModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule 
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule 
     
      
   ],  
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue:'pt-BR'
+  }],
   entryComponents: [
     VideoDialogComponent, ProductCreateComponent    
   ],

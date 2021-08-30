@@ -10,6 +10,7 @@ import { Product } from '../product-crud.model';
 export class ProductReadComponent implements OnInit {
 
   products: Product[];
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private productCrudService: ProductCrudService) { }
 

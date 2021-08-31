@@ -17,7 +17,7 @@ export class ProductUpdateComponent implements OnInit {
     private productService: ProductCrudService,
     private route: ActivatedRoute,
     private router: Router,    
-    // @Inject(MAT_DIALOG_DATA) public data: Product
+   @Inject(MAT_DIALOG_DATA) public data: Product
   ) { }
 
   ngOnInit() {

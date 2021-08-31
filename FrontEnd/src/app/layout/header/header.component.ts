@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleModal() {    
-    var win = window.open("https://www.linkedin.com/in/brunno-khouri-delpin-borges-a808621b9/", '_blank');
+    var win = window.open("https://www.linkedin.com/in/william-okubo-08ba43185/", '_blank');
     win.focus();
   }
 

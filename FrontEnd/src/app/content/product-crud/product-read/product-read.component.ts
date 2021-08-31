@@ -26,7 +26,7 @@ export class ProductReadComponent implements OnInit {
   navigateToProductUpdate(productsUpdate: Product): void{
     const dialogRef = this.dialog.open(ProductUpdateComponent, {
       width: '700px',
-      data: productsUpdate
+      data: productsUpdate 
     });
   }
 

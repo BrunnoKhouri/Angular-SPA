@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC Preta",
-      "price": 5.89
+      "price": "3.89"
     },
     {
       "id": 2,
@@ -19,6 +19,11 @@
       "id": 4,
       "name": "PS4",
       "price": 1500.89
+    },
+    {
+      "name": "Ps5",
+      "price": "6999",
+      "id": 5
     }
   ]
 }

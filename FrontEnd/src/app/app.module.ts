@@ -29,8 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './content/product-crud/product-read/product-read.component';
+import { ProductUpdateComponent } from './content/product-crud/product-update/product-update.component';
 
-
+import {  MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 
 
@@ -41,7 +42,7 @@ registerLocaleData(localePt);
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent
+    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent, ProductUpdateComponent
     
   ],
   imports: [
@@ -72,10 +73,10 @@ registerLocaleData(localePt);
   ],  
   providers: [{
     provide: LOCALE_ID,
-    useValue:'pt-BR'
+    useValue: 'pt-BR',
   }],
   entryComponents: [
-    VideoDialogComponent, ProductCreateComponent    
+    VideoDialogComponent, ProductCreateComponent, ProductUpdateComponent    
   ],
   bootstrap: [AppComponent]
 })

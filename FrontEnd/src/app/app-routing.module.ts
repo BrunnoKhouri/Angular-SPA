@@ -1,3 +1,5 @@
+import { PokemonComponent } from './content/pokedex/pokemon/pokemon.component';
+import { PokedexComponent } from './content/pokedex/pokedex.component';
 import { ProductCreateComponent } from './content/product-crud/product-create/product-create.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'samplestore', component: ProductCrudComponent },
   { path: 'samplestore/update/:id', component: ProductUpdateComponent },
-  { path: 'angular', component: AboutAngularComponent }
+  { path: 'angular', component: AboutAngularComponent },
+  { path: 'pokedex', component: PokedexComponent },
+  { path: 'pokedex/pokemon/:id', component: PokemonComponent}
   
 ];
 

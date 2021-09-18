@@ -1,3 +1,4 @@
+import { HeaderService } from './header.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 import { NavComponent } from '../nav/nav.component';
@@ -17,10 +18,23 @@ export class HeaderComponent implements OnInit {
   isActive = true;
 
   constructor(
-    public sidenavService: SidenavService
+    public sidenavService: SidenavService,
+    private headerService: HeaderService
   ) { }
 
   ngOnInit() {
+  }
+
+  get title(): string{
+    return this.headerService.headeData.title
+  }
+
+  get icon(): string{
+    return this.headerService.headeData.icon
+  }
+
+  get routeUrl(): string{
+    return this.headerService.headeData.routeUrl
   }
 
   public onSideNavClick(): void {

@@ -13,8 +13,7 @@ import { ProductUpdateComponent } from './content/product-crud/product-update/pr
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'samplestore', component: ProductCrudComponent },
-  { path: 'samplestore/update/:id', component: ProductUpdateComponent },
+  { path: 'samplestore', component: ProductCrudComponent },  
   { path: 'angular', component: AboutAngularComponent },
   { path: 'pokedex', component: PokedexComponent },
   { path: 'pokedex/pokemon/:id', component: PokemonComponent}

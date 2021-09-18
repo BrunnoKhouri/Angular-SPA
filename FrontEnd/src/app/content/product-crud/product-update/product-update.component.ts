@@ -11,20 +11,26 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product;
+  product: Product = new Product();
 
   constructor(
     private productService: ProductCrudService,
     private route: ActivatedRoute,
-    private router: Router,    
-   @Inject(MAT_DIALOG_DATA) public data: Product
-  ) { }
+    private router: Router,
+    private dialogRef: MatDialogRef<ProductUpdateComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Product,
+  ) {
+    this.product.id = this.data.id;
+    this.product.name = this.data.name;
+    this.product.price = this.data.price;
+  }
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.productService.readById(id).subscribe(product => {
-      this.product = product;
-    });
+    // this.product = this.data;
+    //  const id = this.route.snapshot.paramMap.get('id');
+    // this.productService.readById(id).subscribe(product => {
+    //  this.product = product;
+    //  });
   }
 
   updateProduct(): void {

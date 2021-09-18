@@ -7,6 +7,12 @@
   justify-content: space-between;
 }
 
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
 .button-size{
   margin: 0px 0px 9px;
 }

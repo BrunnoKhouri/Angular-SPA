@@ -31,10 +31,12 @@ import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './content/product-crud/product-read/product-read.component';
 import { ProductUpdateComponent } from './content/product-crud/product-update/product-update.component';
 
+
 import {  MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { PokedexComponent } from './content/pokedex/pokedex.component';
 import { PokedexReadComponent } from './content/pokedex/pokedex-read/pokedex-read.component';
 import { PokemonComponent } from './content/pokedex/pokemon/pokemon.component';
+import { ProductDeleteComponent } from './content/product-crud/product-delete/product-delete.component';
 
 
 
@@ -45,7 +47,7 @@ registerLocaleData(localePt);
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent, ProductUpdateComponent, PokedexComponent, PokedexReadComponent, PokemonComponent
+    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent, ProductUpdateComponent, PokedexComponent, PokedexReadComponent, PokemonComponent, ProductDeleteComponent
     
   ],
   imports: [
@@ -79,7 +81,7 @@ registerLocaleData(localePt);
     useValue: 'pt-BR',
   }],
   entryComponents: [
-    VideoDialogComponent, ProductCreateComponent, ProductUpdateComponent    
+    VideoDialogComponent, ProductCreateComponent, ProductUpdateComponent, ProductDeleteComponent    
   ],
   bootstrap: [AppComponent]
 })

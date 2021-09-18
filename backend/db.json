@@ -2,13 +2,13 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Azul",
-      "price": "3.49"
+      "name": "Caneta BIC Preta",
+      "price": "1.40"
     },
     {
       "id": 2,
       "name": "Folha A4 200G",
-      "price": 15.89
+      "price": "15.90"
     },
     {
       "id": 3,
@@ -16,14 +16,9 @@
       "price": 345.89
     },
     {
-      "id": 4,
-      "name": "PS4",
-      "price": 1500.89
-    },
-    {
-      "name": "Ps5",
-      "price": "6999",
-      "id": 5
+      "name": "PS5",
+      "price": "4500",
+      "id": 4
     }
   ]
 }

@@ -1,0 +1,35 @@
+.content{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    background: white;
+    width: 100%;
+    right: 0px;
+    height: 100%;
+}
+
+.content-dialog{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+& h1{
+    font-size: 50px;
+}
+& h2{
+    font-size: 40px;
+    padding: 2px;
+}
+}
+
+.button{
+    border-radius: 50px;
+    width: 306px;
+    height: 50px;
+    background-color: #070720;
+    color: white;
+    cursor: pointer;
+}

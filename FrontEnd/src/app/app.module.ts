@@ -37,17 +37,15 @@ import { PokedexComponent } from './content/pokedex/pokedex.component';
 import { PokedexReadComponent } from './content/pokedex/pokedex-read/pokedex-read.component';
 import { PokemonComponent } from './content/pokedex/pokemon/pokemon.component';
 import { ProductDeleteComponent } from './content/product-crud/product-delete/product-delete.component';
+import { NotFoundComponent } from './layout/not-found/not-found.component';
 
-
-
-registerLocaleData(localePt);
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,    
-    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent, ProductUpdateComponent, PokedexComponent, PokedexReadComponent, PokemonComponent, ProductDeleteComponent
+    NavComponent, HomeComponent, AboutAngularComponent, VideoDialogComponent, ProductCrudComponent, ProductCreateComponent, ProductReadComponent, ProductUpdateComponent, PokedexComponent, PokedexReadComponent, PokemonComponent, ProductDeleteComponent, NotFoundComponent
     
   ],
   imports: [
@@ -55,7 +53,7 @@ registerLocaleData(localePt);
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule, 
+    FormsModule,    
 
     //Angular Material
     MatSnackBarModule,   
